@@ -3437,7 +3437,7 @@ void do_cmd_fire(int quiver)
 	}
 	
 	/* Get a direction (or cancel) */
-	if (!get_aim_dir(&dir, tdis)) return;
+	if (!get_aim_dir(&dir, tdis, FALSE)) return;
 
 	/* Start at the player */
 	y = p_ptr->py;
@@ -3452,12 +3452,6 @@ void do_cmd_fire(int quiver)
 	{
 		ty = p_ptr->target_row;
 		tx = p_ptr->target_col;
-	}
-	
-	if ((dir == DIRECTION_UP) || (dir == DIRECTION_DOWN))
-	{
-		ty = p_ptr->py;
-		tx = p_ptr->px;
 	}
 
 	/* Handle player fear */
@@ -4268,7 +4262,7 @@ void do_cmd_throw(bool automatic)
     }
     
 	// Otherwise get a direction (or cancel) */
-	else if (!get_aim_dir(&dir, tdis)) return;
+	if (!get_aim_dir(&dir, tdis, FALSE)) return;
 
 	/* Take off equipment first */
 	if (item >= INVEN_WIELD)
@@ -4299,12 +4293,6 @@ void do_cmd_throw(bool automatic)
 		{
 			spatial_target = TRUE;
 		}
-	}
-	
-	if ((dir == DIRECTION_UP) || (dir == DIRECTION_DOWN))
-	{
-		ty = p_ptr->py;
-		tx = p_ptr->px;
 	}
 
 	/* Handle player fear */
