@@ -1611,7 +1611,7 @@ void note_spot(int y, int x)
 		/* Memorize objects */
 		o_ptr->marked = TRUE;
 	}
-
+        cave_info[y][x] |= (CAVE_KNOWN);
 	/* Hack -- memorize grids */
 	if (!(info & (CAVE_MARK)))
 	{
@@ -3948,6 +3948,7 @@ void map_area(void)
 		{
 			if (in_bounds_fully(y, x))
 			{
+			        cave_info[y][x] |= (CAVE_KNOWN);
 				/* All non-walls are "checked", including rubble */
 				if ((cave_feat[y][x] < FEAT_WALL_HEAD) ||
 					(cave_stair_bold(y,x)) || (cave_feat[y][x] == FEAT_RUBBLE) || cave_forge_bold(y,x) || (cave_feat[y][x] == FEAT_CHASM)) 
@@ -4034,6 +4035,7 @@ void wiz_light(void)
 
 					/* Remember the grid */
 					cave_info[yy][xx] |= (CAVE_MARK);
+                                        cave_info[yy][xx] |= (CAVE_KNOWN);
 				}
 			}
 		}
@@ -4064,6 +4066,7 @@ void wiz_dark(void)
 		{
 			/* Process the grid */
 			cave_info[y][x] &= ~(CAVE_MARK);
+                        cave_info[y][x] &= ~(CAVE_KNOWN);
 			
 			// forget all traps!
 			if (cave_trap_bold(y,x) && !((p_ptr->py == y) && (p_ptr->px == x)))
@@ -4128,6 +4131,7 @@ void gates_illuminate(bool daytime)
 	{
 		for (x = 0; x < p_ptr->cur_map_wid; x++)
 		{
+                        cave_info[y][x] |= (CAVE_KNOWN);
 			/* Interesting grids */
 			if (!cave_floorlike_bold(y,x))
 			{
