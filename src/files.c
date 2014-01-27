@@ -4530,6 +4530,58 @@ errr file_character(cptr name, bool full)
 		}
 	}
 
+	// Dump found artefacts if dead.
+	if (p_ptr->is_dead)
+	{
+		fprintf(fff, "\n\n  [Artefacts]\n\n");
+
+		// Just go to the end of the normal artefacts list, don't also grab
+		// forged artefacts.
+		for (i = 0; i < z_info->art_norm_max; i++)
+		{
+			char o_name[120];
+			artefact_type *a_ptr;
+			object_type *o_ptr;
+			object_type object_type_body;
+			o_ptr = &object_type_body;
+
+			a_ptr = &a_info[i];
+			if (a_ptr->cur_num == 0) continue;
+
+			make_fake_artefact(o_ptr, i);
+			object_desc_spoil(o_name, sizeof(o_name), o_ptr, TRUE, 0);
+
+			fprintf(fff, "%s %s\n", o_name, a_ptr->found_num > 0 ? "(found)" : "");
+		}
+	}
+
+	fprintf(fff, "\n\n  [Dudes]\n\n");
+
+	for (i = 1; i < z_info->r_max - 1; i++)
+	{
+		monster_race *r_ptr = &r_info[i];
+		monster_lore *l_ptr = &l_list[i];
+
+		if (!l_ptr->psights && !l_ptr->pkills) {
+			continue;
+		}
+
+		if (r_ptr->flags1 & (RF1_UNIQUE))
+		{
+			/* Print a message */
+			fprintf(fff, "  %-7s %s \n",
+			l_ptr->pkills ? "(slain)" : "(seen)",
+					(r_name + r_ptr->name));
+		}
+		else
+		{
+			/* Print a message */
+			fprintf(fff, "%3d /%3d  %-40s\n",
+					l_ptr->pkills, l_ptr->psights, (r_name + r_ptr->name));
+		}
+	}
+
+
 	fprintf(fff, "\n\n  [Notes]\n\n");
 	
 	/*dump notes to character file*/
