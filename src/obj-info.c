@@ -249,12 +249,18 @@ static bool describe_brand(const object_type *o_ptr, u32b f1)
 	if (f1 & (TR1_BRAND_COLD)) descs[cnt++] = "frost";
 	if (f1 & (TR1_BRAND_POIS)) descs[cnt++] = "venom";
 
-	if (o_ptr->number == 1)
+	if ((wield_slot(o_ptr) == INVEN_WIELD || wield_slot(o_ptr) == INVEN_BOW)
+        && o_ptr->number == 1)
 	{
 		/* Describe brands */
 		output_desc_list("It is branded with ", descs, cnt);
 	}
-	else
+    else if (o_ptr->number == 1)
+    {
+        /* Describe brands */
+        output_desc_list("It brands your wielded weapon with ", descs, cnt);
+    }
+    else
 	{
 		/* Describe brands */
 		output_desc_list("They are branded with ", descs, cnt);
@@ -277,19 +283,45 @@ static bool describe_misc_weapon_attributes(const object_type *o_ptr, u32b f1)
 	(void)o_ptr;
 
 	if (f1 & (TR1_SHARPNESS))
-	{
-		if (o_ptr->number == 1)	p_text_out("It cuts easily through armour.  ");
-		else					p_text_out("They cut easily through armour.  ");
+    {
+        if ((wield_slot(o_ptr) == INVEN_WIELD || wield_slot(o_ptr) == INVEN_BOW)
+            && o_ptr->number == 1)
+        {
+            p_text_out("It cuts easily through armour.  ");
+        }
+        else if (o_ptr->number == 1)
+        {
+            p_text_out("It allows you to cut easily through armour.  ");
+        }
+        else
+        {
+            p_text_out("They cut easily through armour.  ");
+        }
+		
 		message = TRUE;
 	}
 	if (f1 & (TR1_SHARPNESS2))
-	{
-		p_text_out("It cuts very easily through armour.  ");
+    {
+        if ((wield_slot(o_ptr) == INVEN_WIELD || wield_slot(o_ptr) == INVEN_BOW)
+            && o_ptr->number == 1)
+        {
+            p_text_out("It cuts very easily through armour.  ");
+        }
+        else if (o_ptr->number == 1)
+        {
+            p_text_out("It allows you to cut very easily through armour.  ");
+        }
+        else
+        {
+            p_text_out("They cut very easily through armour.  ");
+        }
+		
 		message = TRUE;
 	}
 	if (f1 & (TR1_VAMPIRIC))
 	{
 		p_text_out("It drains life from your enemies.  ");
+        
 		message = TRUE;
 	}
 	
@@ -934,4 +966,3 @@ void object_info_screen(const object_type *o_ptr)
 
 	return;
 }
-
