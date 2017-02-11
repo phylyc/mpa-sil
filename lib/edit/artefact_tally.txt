@@ -1,0 +1,57 @@
+Broken Sword		|
+Curved Sword		|
+Longsword 		||||
+Mithril Longsword	||
+Dagger 			||| Shortsword		|||
+Deathblade		|
+Bastard Sword		||
+Greatsword		||
+Mithril Greatsword	 Spear			||
+Great Spear		|
+Glaive			||
+Throwing Axe		
+Battle Axe		||
+Great Axe		| Quarterstaff		|
+War Hammer		||
+Sceptre			|
+Shovel			
+Mattock			|
+ Short Bow		||
+Long Bow		||
+Dragon-horn Bow		|
+
+Ring			||
+Amulet			|||
+Jewel			|||||
+Lantern			
+
+Filthy Rag 		|
+Robe 			||
+Leather Armour 		|||
+Studded Leather 	||
+Galvorn Armour 		| Mail Corslet		|||
+Hauberk			|||
+Mithril Corslet		|
+
+Sloak			||
+Shadow Cloak		|
+Wolf-hame		|
+Bat-fell		|
+ Round Shield		||
+Kite Shield		|||
+Mithril Shield		|
+ Crown			|||
+Helm			|
+Great Helm		||
+Dwarf Mask		|
+Mithril Helm		|
+				
+Gloves			|||
+Gauntlets		|
+Mithril Gauntlets	|
+				
+Boots			||
+Greaves			||
+Mithril Greaves			
+
+Arrow			|
