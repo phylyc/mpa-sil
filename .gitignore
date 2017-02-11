@@ -1,7 +1,12 @@
 *.o
 *.raw
+src/sil.o.i386
+src/sil.o.x86_64
 sil
 sil.exe
+Sil.app
+Sil.xcodeproj/
+lib/user/*.png
 lib/user/*.txt
 lib/user/*.prf
 .new
