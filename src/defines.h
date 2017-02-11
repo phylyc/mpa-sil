@@ -279,7 +279,9 @@
 #define FLOW_PLAYER_NOISE       FLOW_WANDERING_TAIL + 1
 #define FLOW_MONSTER_NOISE      FLOW_WANDERING_TAIL + 2
 #define FLOW_AUTOMATON          FLOW_WANDERING_TAIL + 3
-#define MAX_FLOWS               FLOW_WANDERING_TAIL + 4
+#define FLOW_AUTOMATON_FIGHT    FLOW_WANDERING_TAIL + 4
+#define FLOW_AUTOMATON_SECURE   FLOW_WANDERING_TAIL + 5
+#define MAX_FLOWS               FLOW_WANDERING_TAIL + 6
 
 /*
  * Maximum distance from the character to store flow (noise) information
