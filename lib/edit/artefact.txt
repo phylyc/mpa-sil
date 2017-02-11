@@ -74,73 +74,126 @@
 # Silmaril in FA 469, so I'd like to keep roughly to this date.
 #
 # Elves
-# * Feanor		(crown - smithing, fire, will, aggravate)
+# * Finwe		(jewel - res fire, light)
+# * Feanor		(crown - smithing, will, res fire, see invis, light, aggravate)
 #   * Maedhros		(hauberk - combat bonuses, res fire, res poison)
-#   * Maglor		(cloak - song, restore voice)
-#   * Celegorm		(bow - will, slay wolf/spider)
-#   * Caranthir		(leather - stealth, dark, rage)
-#   * Curufin		(helm - perception, stealth, will, res confusion)
+#   * Maglor		(cloak - song, song of trees)
+#   * Celegorm		(shortbow - gra, slay wolf)
+#   * Caranthir		(leather armour - stealth, dark)
+#   * Curufin		(helm - perception, stealth, res confusion, danger, listen)
 #     * Celebrimbor	(gloves - smithing, free action)
-#   * Amrod		(short sword - perception, stealth)
-#   * Amras		(broken sword - perception, stealth, fire)
-# * Fingolfin		('ringil' - rcold, light) (shield - con, rfear)
-#   * Fingon		(corslet - resist fear, con)
-#     * Gil-galad	('aeglos' - cold)
-#   * Turgon		('glamdring' - will, slay orc/troll/rauko/dragon)
+#   * Amrod		(shortsword - perception, stealth, free action)
+#   * Amras		(broken sword - perception, stealth, fire, res fire)
+# * Fingolfin		(mithril longsword (Ringil) - cold, light) 
+#			(kite shield - con, sust con, res fear)
+#   * Fingon		(corslet - resist fear, con, gra)
+#     * Gil-galad	(spear (Aeglos) - cold)
+#   * Turgon		(longsword (Glamdring) - will, slay orc/troll/rauko/dragon)
+#			(longsword (Orcrist) - perception, slay orc/troll)
 #     * Idril		(robe - speed)	
-#       * Earendil	(elessar - con, regenerate, heal) (bow - dex, slay dragon)
-#   * Aredhel		(robe - sustain grace, free action, res dark)
-#     * Maeglin	        (galvorn armour - hunger, channelling, res poison)
+#       * Earendil	(jewel (Elessar) - con, regenerate, strength in adversity)
+#			(dragonhorn bow (Avernien) - light, slay dragon)
+#   * Aredhel		(robe - sustain grace, free action)
 # - Finarfin
-#   * Finrod		(boots - good evasion, free action)
+#   * Finrod		(rag - disguise, vanish)
 #   * Angrod		(round shield - res stun, res conf, res fire)
 #     * Orodreth	(greaves - dex, res fire)
-#   * Aegnor
-#   * Galadriel
-# * Thingol		(cloak - grey, rfire, rcold, free act) (Aranruth - will, rfear, danger)
-#   * Luthien		(shadow cloak - res dark, sust gra, stealth)
-# * also...
-#   * Daeron		(? - song, hunger)
+#   * Aegnor		(studded leather - will, concentration)
+#   * Galadriel		(shortsword - sust gra, riposte)
+#   * Glorfindel	(round shield - charge)
+# * Irme		(boots - light, sust dex)
+# * Thingol		(cloak - res fire, res cold, free action) 
+#			(longsword (Aranruth) - will, res fear, danger)
+#   * Luthien		(shadow cloak - darkness, sust gra, stealth, song of lorien)
+# also...
+#   * Daeron		(crown - song)
 #   - Celeborn
-#   * Beleg		(Dailir - bonuses) (Belthronding - dex, stealth, shot)
-#   * Eol		('Ang' - sharpness, danger) ('Ang' - sharpness, hunger)
-#   * Ecthelion
-#   * Tinfang Gelion	(? - song)
+#   * Beleg		(arrow (Dailir) - acc) 
+#			(longbow (Belthronding) - perception)
+#   * Eol		(bastard sword (Anglachel) - sharpness, danger) 
+#			(bastard sword (Anguirel) - sharpness, hunger)
+#     * Meaglin		(galvorn armour - smithing, res poison, hunger)
+#   * Ecthelion		(mithril helm - song, res fire, res fear, song of staying)
+#   * Tinfang Gelion	(amulet - song, woven themes)
+#   * Rumil		(gloves - gra, subtlety)
+#
+# * Melkor / Morgoth	(great spear - neg gra, poison, vul poison, curse)
+#			(hammer (Grond) - tunnel)
+#   * Boldog		(spear - res fear, slay wolf)
+#   * Delmereth		(deathblade - stealth, vampiric, hunger)
+#   * Draugluin		(wolf-hame - stealth, disguise)
+#   * Gothmog		(greatsword (Calris) - con, fire, light, vul cold, curse) 
+#   * Glaurung		(jewel - sharpness2, darkness)
+#   * Nan		(greatsword (Glend) - str, sust str)
+#   * Thu		(sceptre - gra, danger, haunted, song of mastery)
+#   			(jewel - speed, darkness)
+#   * Thuringwethil	(bat-fell - stealth, disguise)
+#			(jewel - vampiric, darkness)
 #
 # Men
-# * Beor		(studded leather - resist poison, resist dark)
-#   * Beren		(dagmor - grace, res fear, res dark)
-#   * Barahir		(Ring - free action, res poison)
-#   * Tuor		(Dramborleg - slay orc/troll/rauko)
+# * Beor		(studded leather - res poison, sust gra, inner light)
+#   * Beren		(shortsword (Dagmor) - grace, res fear, light)
+#   * Barahir		(Ring - free action, res poison, song of este)
+#   * Tuor		(battle axe (Dramborleg) - slay orc/troll/rauko)
 # - Marach
-#   * Hador		(shield - res cold, res lightning)
-#   * Hurin		(battle axe - con, will, resist fear, slay troll, rage)
-#     * Turin		(dragon helm - str, will, rfear, rstun) (Anglachel - sharp, danger)
+#   * Hador		(kite shield - res cold, res fire)
+#			(great helm - str, res fear, res stun, will)
+#     * Gundor		(mail corslet - str, crowd fighting)
+#   * Hurin		(battle axe - con, will, resist fear, slay troll, song of slaying)
+#     - Turin			(dragon helm - str, will, rfear, rstun)
 #   - Gloredhel
-# * Halmir		(staff - sustain str/con, res poison)
+# * Gorlim		(leather armour - fear, exchange places)
+# * Halmir		(staff - sust str/con, res poison)
 #
-# Dwarves
+# Dwarves		(amulet - con, gra)
 # * Azaghal		(dagger - slay dragon, res fear, res fire)
-# * Durin		(mail corslet - res fire, res cold, regenerate)
-# * Telchar		(hammer - smithing, sust str, res fire)
-# * Gamil Zirak		(gloves - smithing, res fire)
+# * Durin		(mail corslet - res fire, res cold)
+# * Telchar		(dagger (Angrist) - sharpness2)
+#			(longsword (Narsil) - light, res fire, res cold)
+#			(hammer - smithing, sust str, res fire)
+# * Gamil Zirak		(gauntlets - smithing, res fire)
+#			(mattock - tunnel)
 #
 # Powers
-# * Melian
+# * Melian		(ring - perception, channeling)
 #
 # Places
-# * Sirion
-# * Taur-nu-fuin
-# * Belegost
-# * Nogrod		(great axe - slay orc/troll/rauko, res fire)
-# * Amon Rudh
-# - Taur-im-Duinath
-# * Nargothrond
+# * Amon Rudh		(hauberk - critical resistance)
+# - Belegost
+# * Brethil		(gloves - sust dex, throwing mastery)
+# * Gorgoroth		(curved sword - neg gra, sharpness, darkness, danger, assassination)
+# * Helcaraxe		(greaves - res cold, sust str/dex/con/gra)
+#   			(jewel - cold, darkness)
+# * Khazad-Dum / 
+#     Dwarrowdelf	(dwarf mask - will, res fire, strength in adversity)
 # - Mithrim
-# * Brethil
+# - Nargothrond
+# * Nevrast		(hauberk - sust gra, sust str)
+# * Nogrod		(dagger (Nargil) - sharpness)
+#			(great axe - str, slay rauko, res fire)
 # - Ossiriand
-# - Gorgoroth
-# - Khazad-Dum
+# * Sirion		(glaive - opportunist, zone of control)
+# - Taur-im-Duinath
+# * Taur-nu-fuin	(boots - stealth, perception, master hunter)
+# - Thangorodrim
+# * Utumno		(great helm - con, neg gra, vul fire, curse)
+# * Valinor		(mithril shield - light, gra)
+#
+# Other
+# * Gaurin		(glaive - tunnel, sharpness)
+# * Nimphelos		(amulet - gra, sust gra)
+# * Ogbar		(spear - sharpness, spay spider)
+# * Saithnar		(greatsword - sharpness, slay undead, haunted, see invis)
+# * Celebrist		(glaive - dex, neg con, free action)
+# * Celeg Aithorn	(mithril longsword - elec, sharpness)
+# * Wyrm's End		(longbow - flaming arrows)
+#
+# * Death's Sting	(shortbow - crippling shot)
+# * Catskin		(leather armour - flanking, keen senses)
+# * Dark Secrets	(crown - danger, gra, lore-master)
+# * Silverhand		(mithril gauntlets - dex, jeweller)
+# * Starlight		(mithril corslet - res fear, res blind, perception, song, song of elbereth)
+# * Swan		(kite shield - will, sust con, sust dex) 
 #
 #
 # The following is from First Age Angband and could be incorporated:
@@ -641,6 +694,22 @@ F:THROWING
 D:Forged from meteoric iron by Telchar, greatest of Dwarven smiths, 
 D: this dagger slices through metal as easily as flesh, earning its
 D: name: 'Iron Cleaver'.
+
+
+## The Curved Sword of Gorgoroth
+## fawe
+## (ability 3/1 is Assassination)
+
+N:56:of Gorgoroth
+G:|:D
+I:23:7:1
+W:2:7:30:50000
+P:0:2d5:1:0d0
+F:SHARPNESS | NEG_GRA | DARKNESS | DANGER
+B:3/1
+D:Passed through generations of betrayed owners, this thin, 
+D: darkened blade calls for cutting through unwary throats,
+D: no matter how protected they seem to be.
 
 
 ## The Shortsword of Amrod
@@ -1479,6 +1548,66 @@ F:RES_FIRE | LIGHT
 D:When Morgoth slew Finwe, High King of the Noldor, he
 D: took many jewels from his treasuries. Most are now
 D: lost to the Unlight, but this one shines yet pure.
+
+
+## The Lesser Jewel of Helcaraxe
+## fawe
+
+N:171:of Helcaraxe
+G:*:D
+I:39:2:0
+W:17:20:1:50000
+P:0:0d0:0:0d0
+F:BRAND_COLD | DARKNESS
+D:Many jewels were forged and given to Morgoth's loyal servants,
+D: some of which were repeatedly lost and found. 
+D: This jewel does not light the surrounding, and yet it glows 
+D: with an inner icy blue ... 
+
+
+## The Lesser Jewel of Glaurung
+## fawe
+
+N:172:of Glaurung
+G:*:D
+I:39:2:0
+W:18:20:1:50000
+P:0:0d0:0:0d0
+F:SHARPNESS2 | DARKNESS
+D:Many jewels were forged and given to Morgoth's loyal servants,
+D: some of which were repeatedly lost and found. 
+D: This jewel does not light the surrounding, but guides every blade
+D: through any kind of armour.
+
+
+## The Lesser Jewel of Thu
+## fawe
+
+N:173:of Thu
+G:*:D
+I:39:2:0
+W:20:20:1:50000
+P:0:0d0:0:0d0
+F:SPEED | DARKNESS
+D:Many jewels were forged and given to Morgoth's loyal servants,
+D: some of which were repeatedly lost and found. 
+D: This jewel does not light the surrounding, but endows its wearer with
+D: great speed.
+
+
+## The Lesser Jewel of Thuringwethil
+## fawe
+
+N:174:of Thuringwethil
+G:*:D
+I:39:2:0
+W:19:20:1:50000
+P:0:0d0:0:0d0
+F:VAMPIRIC | HUNGER | DARKNESS
+D:Many jewels were forged and given to Morgoth's loyal servants,
+D: some of which were repeatedly lost and found. 
+D: This jewel does not light the surrounding, but endows its wearer with
+D: a healthy bloodlust.
 
 
 ##### Morgoth Artefacts #####
