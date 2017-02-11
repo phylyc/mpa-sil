@@ -6,6 +6,7 @@ sil
 sil.exe
 Sil.app
 Sil.xcodeproj/
+lib/save/
 lib/user/*.png
 lib/user/*.txt
 lib/user/*.prf
