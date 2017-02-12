@@ -1198,7 +1198,7 @@ static int object_value_real_auto(const object_type *o_ptr)
             if (f2 & (TR2_DARKNESS))
             {
                 value -= 400;
-                if (p_ptr->cur_light == 1) value -= 10000;
+                if (p_ptr->cur_light <= 1) value -= 10000;
             }
             if (f2 & (TR2_SLOWNESS)) value -= 500;
             if (f2 & (TR2_DANGER)) value -= 300;

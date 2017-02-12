@@ -2522,6 +2522,7 @@
 // xxx always_pickup
 #define OPT_forgo_attacking_unwary	6
 #define OPT_delay_factor			10
+#define OPT_delay_factor_auto		0 // 25
 #define OPT_hitpoint_warning		11
 // xxx always_repeat
 // xxx depth_in_feet
