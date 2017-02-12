@@ -2227,7 +2227,8 @@ static void calc_bonuses(void)
 		if (f1 & (TR1_SMT)) p_ptr->skill_equip_mod[S_SMT] += o_ptr->pval;
 		if (f1 & (TR1_SNG)) p_ptr->skill_equip_mod[S_SNG] += o_ptr->pval;
 
-		/* Affect attack properties */
+        /* Affect attack properties */
+        if (f1 & (TR1_VAMPIRIC)) p_ptr->vampiric = TRUE;
 		if (f1 & (TR1_SHARPNESS)) p_ptr->sharp = TRUE;
         if (f1 & (TR1_SHARPNESS2)) p_ptr->sharpest = TRUE;
         if (f1 & (TR1_BRAND_ELEC)) p_ptr->elec_branded = TRUE;
