@@ -1656,7 +1656,7 @@ void do_cmd_debug(void)
 		/* Create an artefact */
 		case 'C':
 		{
-			wiz_create_artefact(p_ptr->command_arg);
+            wiz_create_artefact(get_quantity("Artifact ID:", 198));
 			break;
 		}
 
