@@ -1564,10 +1564,18 @@ int light_up_to(int base_radius, object_type *o_ptr)
 	// Some lights flicker
 	if (f2 & (TR2_DARKNESS))
 	{
-		while ((radius > -2) && one_in_(3))
-		{
-			radius--;
-		}
+        // lesser jewels are just dark
+        if (o_ptr->sval == SV_LIGHT_LESSER_JEWEL)
+        {
+            radius--;
+        }
+		else
+        {
+            while ((radius > -2) && one_in_(3))
+            {
+                radius--;
+            }
+        }
 	}
 	else if (o_ptr->timeout < 100)
 	{
@@ -1743,22 +1751,28 @@ void calc_torch(void)
 			bool extinguished = FALSE;
 			
 			/* Some items provide permanent, bright, light */
-			if (o_ptr->sval == SV_LIGHT_LESSER_JEWEL)		p_ptr->cur_light += RADIUS_LESSER_JEWEL;
-			else if (o_ptr->sval == SV_LIGHT_FEANORIAN)		p_ptr->cur_light += RADIUS_FEANORIAN;
-			else if (o_ptr->sval == SV_LIGHT_SILMARIL)		p_ptr->cur_light += RADIUS_SILMARIL;
-
+			if (o_ptr->sval == SV_LIGHT_LESSER_JEWEL)
+            {
+                p_ptr->cur_light += light_up_to(RADIUS_LESSER_JEWEL, o_ptr);
+            }
+			else if (o_ptr->sval == SV_LIGHT_FEANORIAN)
+            {
+                p_ptr->cur_light += light_up_to(RADIUS_FEANORIAN, o_ptr);
+            }
+			else if (o_ptr->sval == SV_LIGHT_SILMARIL)
+            {
+                p_ptr->cur_light += RADIUS_SILMARIL;
+            }
 			/* Torches (with fuel) provide some light */
 			else if ((o_ptr->sval == SV_LIGHT_TORCH) && (o_ptr->timeout > 0))
 			{
 				p_ptr->cur_light += light_up_to(RADIUS_TORCH, o_ptr);
 			}
-
 			/* Lanterns (with fuel) provide more light */
 			else if ((o_ptr->sval == SV_LIGHT_LANTERN) && (o_ptr->timeout > 0))
 			{
 				p_ptr->cur_light += light_up_to(RADIUS_LANTERN, o_ptr);
 			}
-			
 			else
 			{
 				extinguished = TRUE;
