@@ -1896,7 +1896,11 @@ void ident_bow_arrow_by_use(object_type *j_ptr, object_type *i_ptr, object_type 
 
 u32b maybe_notice_slay(const object_type *o_ptr, u32b flag)
 {
-	u32b noticed_flag = 0L, f1, f2, f3;
+    u32b noticed_flag = 0L;
+    u32b f1, f2, f3;
+    
+    /* Extract some flags */
+	object_flags(o_ptr, &f1, &f2, &f3);
 	
 	if ((f1 & flag) && !object_known_p(o_ptr))
 	{
@@ -1950,7 +1954,7 @@ int slay_bonus(const object_type *o_ptr, const monster_type *m_ptr, u32b *notice
 
 				slay_bonus_dice += 1;
 				
-				*noticed_flag = maybe_notice_slay(o_ptr, TR1_SLAY_WOLF);
+                *noticed_flag = maybe_notice_slay(o_ptr, TR1_SLAY_WOLF);
 			}
 
 			/* Slay Spider */
@@ -2038,7 +2042,7 @@ int slay_bonus(const object_type *o_ptr, const monster_type *m_ptr, u32b *notice
 			}
 
 			/* Brand (Elec) */
-			if (f1 & (TR1_BRAND_ELEC))
+			if (p_ptr->elec_branded)
 			{
 				/* Notice immunity */
 				if (r_ptr->flags3 & (RF3_RES_ELEC))
